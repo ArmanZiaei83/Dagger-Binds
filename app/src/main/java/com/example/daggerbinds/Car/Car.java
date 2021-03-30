@@ -1,16 +1,18 @@
 package com.example.daggerbinds.Car;
 
+import androidx.leanback.app.BrandedSupportFragment;
+
 import javax.inject.Inject;
 
 public class Car {
 
     Engine engine;
-    Model model;
+    Brand brand;
 
     @Inject
-    public Car(Engine engine, Model model) {
+    public Car(Engine engine, Brand brand) {
         this.engine = engine;
-        this.model = model;
+        this.brand = brand;
     }
 
     public Engine getEngine() {
@@ -21,12 +23,12 @@ public class Car {
         this.engine = engine;
     }
 
-    public Model getModel() {
-        return model;
+    public Brand getBrand() {
+        return brand;
     }
 
-    public void setModel(Model model) {
-        this.model = model;
+    public void setBrand(Brand brand) {
+        this.brand = brand;
     }
 
     public void driveCar(){
