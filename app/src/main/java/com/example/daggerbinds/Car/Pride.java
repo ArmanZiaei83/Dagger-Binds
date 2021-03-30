@@ -17,6 +17,5 @@ public class Pride implements Engine {
 
     @Inject
     public Pride() {
-        startEngine();
     }
 }
