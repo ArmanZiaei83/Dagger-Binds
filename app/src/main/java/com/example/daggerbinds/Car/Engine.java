@@ -1,7 +1,6 @@
 package com.example.daggerbinds.Car;
 
 public interface Engine {
-
-    void setEngine(String name);
+    String setEngine(String name);
     void startEngine();
 }
